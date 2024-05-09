@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Beau Rivage' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-A-Sketch</title>
+  </head>
+  <body>
+    <div class="flexbox-container main">
+      <div class="display-frame frame">
+        <header class="header">Etch A Sketch</header>
+        <div class="content-wrapper">
+          <div class="leftSection">
+            <button class="resetBtn btn">Reset</button>
+            <button class="gridBtn btn">Grid</button>
+          </div>
+          <div class="inner-frame">
+          <div class="canvas"></div>
+          </div>
+          <div class="rightSection">
+            <input type="color" class="colorPickerBtn btn"></button>
+            <button class="randomColorBtn btn">Random</button>
+            <button class="gradientBtn btn">Grey Scale</button>
+            <button class="eraserBtn btn">Eraser</button>
+          </div>
+        </div>
+        <div class="bottomSection">
+          <label for "gridSizeSelection" class="gridSizeText">
+            Grid Size:
+            <span id="gridSizeText">16</span>
+            px
+          </label>
+          <input class="gridSlider" type="range" min="16" max="100" value="16" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
