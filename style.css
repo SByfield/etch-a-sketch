@@ -73,6 +73,7 @@ body{
     height: 800px;
     width: 800px; 
     padding: 0px;
+    background-color: #ffffff;
 }
 
 .drawingPixel {

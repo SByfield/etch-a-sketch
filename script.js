@@ -101,7 +101,6 @@ function applyGradient(e){
     selectColorToggle = "inactive"; 
     randomColorToggle = "inactive"; 
     eraserToggle = "inactive"
-
     
    // CONFIRM that the target is a drawingPixel
     if (e.target.className === "drawingPixel" || e.target.className === "drawingPixel-gridOff"){
@@ -150,12 +149,8 @@ function paint(e) {
         e.target.style.backgroundColor = getRandomColor();
         e.target.style.opacity = '';    
     } else if (gradientToggle === "active"){
-        if (e.target.backgroundColor = "#FFFFFF"){
-        e.target.style.backgroundColor =  "#000000"
-        applyGradient(e)} 
-        else {
-            applyGradient(e)
-        }
+        e.target.style.backgroundColor = "#000000";
+        applyGradient(e);
      } else if(eraserToggle === "active"){
         e.target.style.backgroundColor = "#FFFFFF"; 
         e.target.style.opacity = ''; 
